@@ -14,4 +14,4 @@ Cd to where dataset is, then run
 To count: grep ">" Prunus-Dulcis-ITS1.fasta | wc -l
 clustalw2 -ALIGN -INFILE=primatesAA.fasta -OUTFILE=primatesAA-aligned.fasta -OUTPUT=FASTA
 
-clustalw2 -ALIGN -INFILE=Prunus-Dulcis-ITS1.fasta -OUTFILE=Prunus-Dulcis-ITS1-aligned.fasta -OUTPUT=FASTA
+clustalw2 -ALIGN -INFILE=ITS1-region.fasta -OUTFILE=ITS1-region-aligned.fasta -OUTPUT=FASTA
