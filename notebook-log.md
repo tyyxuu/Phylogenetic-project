@@ -116,3 +116,55 @@ nodelabels()
 # Final plot of the re-rooted tree
 plot(tree2)  
 
+
+---Maximum Likelihood
+
+## Step 1: Load Required Packages and Data
+
+```r
+library(ape)
+library(phangorn)
+
+# Load aligned ITS1 sequences
+dna <- fasta2DNAbin(file = "https://raw.githubusercontent.com/tyyxuu/Phylogenetic-project/main/Phylogenetic%20project%20dataset/ITS1-region-aligned.fasta")
+print(dna)
+
+# Initial distance matrix using TN93 model
+D <- dist.dna(dna, model = "TN93")
+
+# Visualize character composition (for gap inspection)
+table(as.character(dna))
+
+# Filter sequences with >50% gaps
+dna <- dna[apply(as.character(dna), 1, function(x) sum(x == "-") / length(x)) < 0.5, ]
+
+# Recalculate distance using raw model with pairwise deletion
+D <- dist.dna(dna, model = "raw", pairwise.deletion = TRUE)
+
+# Build NJ tree
+tre <- tryCatch(nj(D), error = function(e) njs(D))
+
+# Plot NJ tree
+plot(tre, cex = 0.6)
+title("Neighbor-Joining Tree")
+
+# Convert DNA alignment to phyDat format
+dna_phy <- phyDat(dna, type = "DNA")
+
+# Use NJ tree (JC model) as starting tree
+tree_init <- nj(dist.dna(dna, model = "JC"))
+
+# Build ML tree using GTR+G+I model
+fit <- pml(tree_init, data = dna_phy)
+fit_ml <- optim.pml(fit, model = "GTR", optGamma = TRUE, optInv = TRUE, rearrangement = "stochastic")
+
+# Plot ML tree
+plot(fit_ml$tree, main = "Maximum Likelihood Tree (GTR+G+I)", cex = 0.6)
+
+# Perform 100 bootstrap replicates
+bs <- bootstrap.pml(fit_ml, bs = 100, optNni = TRUE)
+
+# Plot ML tree with bootstrap support (threshold = 50%)
+plotBS(fit_ml$tree, bs, p = 50, main = "ML Tree with Bootstrap Support")
+
+
