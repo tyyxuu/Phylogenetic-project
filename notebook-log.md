@@ -167,4 +167,81 @@ bs <- bootstrap.pml(fit_ml, bs = 100, optNni = TRUE)
 # Plot ML tree with bootstrap support (threshold = 50%)
 plotBS(fit_ml$tree, bs, p = 50, main = "ML Tree with Bootstrap Support")
 
+**MrBayes Phylogenetic Analysis Notebook**
 
+**Objective:**
+To perform Bayesian phylogenetic inference using MrBayes on an aligned ITS1 region DNA dataset.
+
+---
+
+**Step 1: Prepare the Data**
+- Aligned sequences were initially in FASTA format: `ITS1-region-aligned.fasta`
+- Converted to NEXUS format using Biopython:
+
+```python
+from Bio import AlignIO
+alignment = AlignIO.read("ITS1-region-aligned.fasta", "fasta")
+for record in alignment:
+    record.annotations["molecule_type"] = "DNA"
+AlignIO.write(alignment, "ITS1-region-aligned.nex", "nexus")
+```
+
+---
+
+**Step 2: Add MrBayes Command Block**
+The following block was appended to the end of the `.nex` file:
+
+```nexus
+Begin mrbayes;
+   set autoclose=yes nowarn=yes;
+   lset nst=6 rates=gamma;
+   outgroup KX192120.1;
+   mcmc ngen=1000000 samplefreq=100 printfreq=1000 diagnfreq=1000 nchains=4 temp=0.2 savebrlens=yes;
+   sumt burnin=2500;
+End;
+```
+
+- `nst=6` uses the GTR model
+- `rates=gamma` accounts for rate variation among sites
+- `outgroup` designates the sequence used to root the tree
+- `ngen=1000000` specifies 1 million MCMC generations
+- `samplefreq=100` samples every 100 generations
+- `burnin=2500` discards the first 25% of samples
+
+---
+
+**Step 3: Run MrBayes**
+In the terminal, the MrBayes program was run from the compiled source directory:
+
+```bash
+~/MrBayes/src/mb
+```
+
+At the MrBayes prompt:
+
+```mrbayes
+execute ITS1-region-aligned.nex
+```
+
+---
+
+**Step 4: Output Files**
+After completion, MrBayes produces the following:
+
+- `ITS1-region-aligned.nex.run1.p` and `.run2.p`: parameter traces
+- `ITS1-region-aligned.nex.run1.t` and `.run2.t`: tree samples
+- `ITS1-region-aligned.nex.con.tre`: **consensus tree** with posterior probabilities
+
+---
+
+**Next Steps:**
+- Visualize the consensus tree using [FigTree](https://github.com/rambaut/figtree/releases)
+- Check convergence and posterior summaries
+- Optionally re-run analysis with more generations or model refinements
+
+---
+
+**Notes:**
+- MrBayes was run on macOS, M1 architecture
+- Execution time: approximately 10–30 minutes depending on sequence length and hardware
+- Future extensions: partitioned models, clock models, or larger datasets
