@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.7" version="2.7">
+
+    <data
+id="ITS1-region-aligned"
+spec="Alignment"
+name="alignment">
+        <sequence id="seq_AJ810436.11" spec="Sequence" taxon="AJ810436.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGGGATGAGGGGTCTT----GCG-GCTCCTTGTCCC-TTTATCTCGGGAGGGTTGCATTGCGTTCGCGCAACCGACCC-TTCCGTGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_AJ810438.11" spec="Sequence" taxon="AJ810438.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGNGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCNCTTCCGAGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_AJ810439.11" spec="Sequence" taxon="AJ810439.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCNGGCCCCTTCCGAGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969271.11" spec="Sequence" taxon="HF969271.1" totalcount="4" value="TTTGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCCCGGGGGGGTTGCGCCGCGCTCGCGCGGCCCGCCC-TTCCGGGCGTACAAACGAACACCGGCGGGAACTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCC-GTCGGCCCGGAAACGGTGTTCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGGAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGCGTCACACGCTTTCCCCGGCCCATCTACTCCTTGGGGATTTGCGGGGGGGCGGATTGATGGCCTCCCGGTGCGCCTCGCCGCGCGGTTGGCCCCAATACCAAGTCCTCGGCGACGCACGCCACCACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGAGGGCTCGACCCAAATGCTCGGCTCCGGCTCGGCTTTCAACGCGACCCC---------------------------------------"/>
+        <sequence id="seq_HF969272.11" spec="Sequence" taxon="HF969272.1" totalcount="4" value="-----------------------GGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAAAATTGCTGGGCTCCGGCTCGGCTTTCAACGC---------------------------------------------"/>
+        <sequence id="seq_HF969273.11" spec="Sequence" taxon="HF969273.1" totalcount="4" value="-----------------------GGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGGTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAATATTGCTGGGCTCCGGCTCGGCTTTCAACGC---------------------------------------------"/>
+        <sequence id="seq_HF969274.11" spec="Sequence" taxon="HF969274.1" totalcount="4" value="---------------------GGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969275.11" spec="Sequence" taxon="HF969275.1" totalcount="4" value="---GTTTCCGTAGGTGAACCTGGGGAAAGATCCTTTTTGGAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969276.11" spec="Sequence" taxon="HF969276.1" totalcount="4" value="---------------GAACCTGGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969277.11" spec="Sequence" taxon="HF969277.1" totalcount="4" value="---------------------GGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_KX192120.11" spec="Sequence" taxon="KX192120.1" totalcount="4" value="---------------------------------------------GCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ATGAGGGGCCGTCTCGGCGTGCTCCTTGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAATGAGAGAGCGCGTCCTCCTCGCCCCGGAAATGGTGTGCGCGGGTGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCCAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGTGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACACACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAAAATTGCTGGGCTCCGGCTCGGCTTTCAACGCGACCCCAGGTCAGCGGGGTTACCCGCTGAATTT------------"/>
+        <sequence id="seq_LC600963.11" spec="Sequence" taxon="LC600963.1" totalcount="4" value="--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCACCCCCACTA-CTCCCTCGGGATTGCGGGGTGCGGAT---GATGGCCTCCCGTACGCTCCGTCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGGGGGCTCGAAA-AAATGCTTGGCTCCGGCTTGGCTTTCAACGCGACCCCAGGTCAGGCGGGGTTACCCGCTGAATTTAAGCATATCAA"/>
+    </data>
+
+    <data
+id="ITS1-region-aligned1"
+spec="Alignment">
+        <sequence id="seq_AJ810436.1" spec="Sequence" taxon="AJ810436.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGGGATGAGGGGTCTT----GCG-GCTCCTTGTCCC-TTTATCTCGGGAGGGTTGCATTGCGTTCGCGCAACCGACCC-TTCCGTGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_AJ810438.1" spec="Sequence" taxon="AJ810438.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGNGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCNCTTCCGAGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_AJ810439.1" spec="Sequence" taxon="AJ810439.1" totalcount="4" value="-------------------------------------CGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCNGGCCCCTTCCGAGCGTACAAACGAACACCGGCGCGAATTG--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969271.1" spec="Sequence" taxon="HF969271.1" totalcount="4" value="TTTGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCCCGGGGGGGTTGCGCCGCGCTCGCGCGGCCCGCCC-TTCCGGGCGTACAAACGAACACCGGCGGGAACTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCC-GTCGGCCCGGAAACGGTGTTCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGGAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGCGTCACACGCTTTCCCCGGCCCATCTACTCCTTGGGGATTTGCGGGGGGGCGGATTGATGGCCTCCCGGTGCGCCTCGCCGCGCGGTTGGCCCCAATACCAAGTCCTCGGCGACGCACGCCACCACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGAGGGCTCGACCCAAATGCTCGGCTCCGGCTCGGCTTTCAACGCGACCCC---------------------------------------"/>
+        <sequence id="seq_HF969272.1" spec="Sequence" taxon="HF969272.1" totalcount="4" value="-----------------------GGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAAAATTGCTGGGCTCCGGCTCGGCTTTCAACGC---------------------------------------------"/>
+        <sequence id="seq_HF969273.1" spec="Sequence" taxon="HF969273.1" totalcount="4" value="-----------------------GGAAGGATCATTGTCGAAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ACGAGGGGCCGTCTCGGCGTGCTCCTCGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGCGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGGTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAATATTGCTGGGCTCCGGCTCGGCTTTCAACGC---------------------------------------------"/>
+        <sequence id="seq_HF969274.1" spec="Sequence" taxon="HF969274.1" totalcount="4" value="---------------------GGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969275.1" spec="Sequence" taxon="HF969275.1" totalcount="4" value="---GTTTCCGTAGGTGAACCTGGGGAAAGATCCTTTTTGGAACCTGCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969276.1" spec="Sequence" taxon="HF969276.1" totalcount="4" value="---------------GAACCTGGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_HF969277.1" spec="Sequence" taxon="HF969277.1" totalcount="4" value="---------------------GGGGAAAGATCCTTTTTGGAACCTGCCTAGCCGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-CCGAGGGGTCCT----GCG-GCTCCTCGTCCCCTTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCGGCCGACCC-TTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAAATTGAACGAGAGAGCGCGTCCCCGTCGCCCCGGAAACGGTGTGCGAGGGCGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGCGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAGACCTCGGTTGCCCGTCGTGTGCGTTCGTCGCGCATCGA---------------------------------------------------------------------------------------"/>
+        <sequence id="seq_KX192120.1" spec="Sequence" taxon="KX192120.1" totalcount="4" value="---------------------------------------------GCCTAGCAGAACGACCCGAGAACTAGTTTCAAAGCGGGGG-ATGAGGGGCCGTCTCGGCGTGCTCCTTGTCCC-TTTATCTCGGGGGGGTTGCGTTGCGCTCGCGCAGCCGGCCCCTTCCGGGCGTACAAACGAACACCGGCGCGAATTGCGCCAAGGAACTTGAATGAGAGAGCGCGTCCTCCTCGCCCCGGAAATGGTGTGCGCGGGTGGCGTCGTCATCTTCAAATATGTCAAAACGACTCTCGGCAACGGATATCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCCAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCCCCCCCATCAACTCCTTCGGGATTGTGGGGGGCGGAT---GATGGCCTCCCGTGCGCCTCGCCGCGCGGTTGGCATAAATGCCAAGTCCTCGGCGACACACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGAGGGCTCGAAAAAATTGCTGGGCTCCGGCTCGGCTTTCAACGCGACCCCAGGTCAGCGGGGTTACCCGCTGAATTT------------"/>
+        <sequence id="seq_LC600963.1" spec="Sequence" taxon="LC600963.1" totalcount="4" value="--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCTCGGCTCTCGCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCATTAGGCCGAGGGCACGCCTGCCTGGGCGTCACACGTCGTTGCACCCCCACTA-CTCCCTCGGGATTGCGGGGTGCGGAT---GATGGCCTCCCGTACGCTCCGTCGCGCGGTTGGCATAAATACCAAGTCCTCGGCGACGCACGCCACGACAATCGGTGGTTGCGAAACCTCGGTTGCCCGTCGTGTGCGGTCGTCGCGCATCGGGGGCTCGAAA-AAATGCTTGGCTCCGGCTTGGCTTTCAACGCGACCCCAGGTCAGGCGGGGTTACCCGCTGAATTTAAGCATATCAA"/>
+    </data>
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    <run id="mcmc" spec="MCMC" chainLength="10000000" storeEvery="1000">
+        <state id="state" spec="State" storeEvery="5000">
+            <tree id="Tree.t:ITS1-region-aligned" spec="beast.base.evolution.tree.Tree" name="stateNode">
+                <taxonset id="TaxonSet.ITS1-region-aligned" spec="TaxonSet">
+                    <alignment idref="ITS1-region-aligned"/>
+                </taxonset>
+            </tree>
+            <parameter id="gammaShape.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.1" name="stateNode">0.5</parameter>
+            <parameter id="birthRate.t:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateAC.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateAG.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateAT.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateCG.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateGT.s:ITS1-region-aligned" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="freqParameter.s:ITS1-region-aligned" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+        </state>
+        <init id="RandomTree.t:ITS1-region-aligned" spec="RandomTree" estimate="false" initial="@Tree.t:ITS1-region-aligned" taxa="@ITS1-region-aligned">
+            <populationModel id="ConstantPopulation0.t:ITS1-region-aligned" spec="ConstantPopulation">
+                <parameter id="randomPopSize.t:ITS1-region-aligned" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+            </populationModel>
+        </init>
+        <distribution id="posterior" spec="CompoundDistribution">
+            <distribution id="prior" spec="CompoundDistribution">
+                <distribution id="YuleModel.t:ITS1-region-aligned" spec="beast.base.evolution.speciation.YuleModel" birthDiffRate="@birthRate.t:ITS1-region-aligned" tree="@Tree.t:ITS1-region-aligned"/>
+                <prior id="YuleBirthRatePrior.t:ITS1-region-aligned" name="distribution" x="@birthRate.t:ITS1-region-aligned">
+                    <Uniform id="Uniform.1" name="distr" upper="Infinity"/>
+                </prior>
+                <prior id="FrequenciesPrior.s:ITS1-region-aligned" name="distribution" x="@freqParameter.s:ITS1-region-aligned">
+                    <distr id="Dirichlet.0" spec="distribution.Dirichlet">
+                        <parameter id="RealParameter.13" spec="parameter.RealParameter" dimension="4" estimate="false" name="alpha">4.0 4.0 4.0 4.0</parameter>
+                    </distr>
+                </prior>
+                <prior id="GammaShapePrior.s:ITS1-region-aligned" name="distribution" x="@gammaShape.s:ITS1-region-aligned">
+                    <Exponential id="Exponential.1" name="distr">
+                        <parameter id="RealParameter.16" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                    </Exponential>
+                </prior>
+                <prior id="RateACPrior.s:ITS1-region-aligned" name="distribution" x="@rateAC.s:ITS1-region-aligned">
+                    <Gamma id="Gamma.0" name="distr">
+                        <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateAGPrior.s:ITS1-region-aligned" name="distribution" x="@rateAG.s:ITS1-region-aligned">
+                    <Gamma id="Gamma.1" name="distr">
+                        <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateATPrior.s:ITS1-region-aligned" name="distribution" x="@rateAT.s:ITS1-region-aligned">
+                    <Gamma id="Gamma.2" name="distr">
+                        <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateCGPrior.s:ITS1-region-aligned" name="distribution" x="@rateCG.s:ITS1-region-aligned">
+                    <Gamma id="Gamma.3" name="distr">
+                        <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateGTPrior.s:ITS1-region-aligned" name="distribution" x="@rateGT.s:ITS1-region-aligned">
+                    <Gamma id="Gamma.5" name="distr">
+                        <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+            </distribution>
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                <distribution id="treeLikelihood.ITS1-region-aligned" spec="ThreadedTreeLikelihood" tree="@Tree.t:ITS1-region-aligned">
+                    <data idref="ITS1-region-aligned1"/>
+                    <siteModel id="SiteModel.s:ITS1-region-aligned" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:ITS1-region-aligned">
+                        <parameter id="mutationRate.s:ITS1-region-aligned" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRate">1.0</parameter>
+                        <parameter id="proportionInvariant.s:ITS1-region-aligned" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                        <substModel id="gtr.s:ITS1-region-aligned" spec="GTR" rateAC="@rateAC.s:ITS1-region-aligned" rateAG="@rateAG.s:ITS1-region-aligned" rateAT="@rateAT.s:ITS1-region-aligned" rateCG="@rateCG.s:ITS1-region-aligned" rateGT="@rateGT.s:ITS1-region-aligned">
+                            <parameter id="rateCT.s:ITS1-region-aligned" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                            <frequencies id="estimatedFreqs.s:ITS1-region-aligned" spec="Frequencies" frequencies="@freqParameter.s:ITS1-region-aligned"/>
+                        </substModel>
+                    </siteModel>
+                    <branchRateModel id="StrictClock.c:ITS1-region-aligned" spec="beast.base.evolution.branchratemodel.StrictClockModel">
+                        <parameter id="clockRate.c:ITS1-region-aligned" spec="parameter.RealParameter" estimate="false" lower="0.0" name="clock.rate">1.0</parameter>
+                    </branchRateModel>
+                </distribution>
+            </distribution>
+        </distribution>
+        <operator id="gammaShapeScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="gammaShape.s:ITS1-region-aligned"/>
+            <operator id="AVMNOperator.ITS1-region-aligned" spec="kernel.AdaptableVarianceMultivariateNormalOperator" allowNonsense="true" beta="0.05" burnin="400" initial="800" weight="0.1">
+                <transformations id="AVMNSumTransform.ITS1-region-aligned" spec="operator.kernel.Transform$LogConstrainedSumTransform">
+                    <f idref="freqParameter.s:ITS1-region-aligned"/>
+                </transformations>
+                <transformations id="AVMNLogTransform.ITS1-region-aligned" spec="operator.kernel.Transform$LogTransform">
+                    <f idref="gammaShape.s:ITS1-region-aligned"/>
+                    <f idref="rateAC.s:ITS1-region-aligned"/>
+                    <f idref="rateAG.s:ITS1-region-aligned"/>
+                    <f idref="rateAT.s:ITS1-region-aligned"/>
+                    <f idref="rateCG.s:ITS1-region-aligned"/>
+                    <f idref="rateGT.s:ITS1-region-aligned"/>
+                </transformations>
+                <transformations id="AVMNNoTransform.ITS1-region-aligned" spec="operator.kernel.Transform$NoTransform">
+                    <f idref="Tree.t:ITS1-region-aligned"/>
+                </transformations>
+            </operator>
+            <operator id="gammaShapeScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@gammaShape.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="YuleBirthRateScaler.t:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@birthRate.t:ITS1-region-aligned" upper="10.0" weight="3.0"/>
+        <operator id="YuleModelTreeRootScaler.t:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:ITS1-region-aligned" upper="10.0" weight="3.0"/>
+        <operator id="YuleModelUniformOperator.t:ITS1-region-aligned" spec="kernel.BactrianNodeOperator" tree="@Tree.t:ITS1-region-aligned" weight="30.0"/>
+        <operator id="YuleModelSubtreeSlide.t:ITS1-region-aligned" spec="kernel.BactrianSubtreeSlide" tree="@Tree.t:ITS1-region-aligned" weight="15.0"/>
+        <operator id="YuleModelNarrow.t:ITS1-region-aligned" spec="Exchange" tree="@Tree.t:ITS1-region-aligned" weight="15.0"/>
+        <operator id="YuleModelWide.t:ITS1-region-aligned" spec="Exchange" isNarrow="false" tree="@Tree.t:ITS1-region-aligned" weight="3.0"/>
+        <operator id="YuleModelWilsonBalding.t:ITS1-region-aligned" spec="WilsonBalding" tree="@Tree.t:ITS1-region-aligned" weight="3.0"/>
+        <operator id="YuleModelBICEPSEpochTop.t:ITS1-region-aligned" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:ITS1-region-aligned" weight="2.0"/>
+        <operator id="YuleModelBICEPSEpochAll.t:ITS1-region-aligned" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:ITS1-region-aligned" weight="2.0"/>
+        <operator id="YuleModelBICEPSTreeFlex.t:ITS1-region-aligned" spec="TreeStretchOperator" scaleFactor="0.01" tree="@Tree.t:ITS1-region-aligned" weight="2.0"/>
+        <operator id="RateACScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAC.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="RateACScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@rateAC.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateAGScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAG.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="RateAGScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@rateAG.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateATScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAT.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="RateATScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@rateAT.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateCGScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateCG.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="RateCGScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@rateCG.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateGTScaler.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateGT.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="RateGTScalerX.s:ITS1-region-aligned" spec="kernel.BactrianScaleOperator" parameter="@rateGT.s:ITS1-region-aligned" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="FrequenciesExchanger.s:ITS1-region-aligned" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="freqParameter.s:ITS1-region-aligned"/>
+            <operator idref="AVMNOperator.ITS1-region-aligned"/>
+            <operator id="FrequenciesExchangerX.s:ITS1-region-aligned" spec="operator.kernel.BactrianDeltaExchangeOperator" delta="0.01" weight="0.1">
+                <parameter idref="freqParameter.s:ITS1-region-aligned"/>
+            </operator>
+        </operator>
+        <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="treeLikelihood.ITS1-region-aligned"/>
+            <log id="TreeHeight.t:ITS1-region-aligned" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:ITS1-region-aligned"/>
+            <log idref="gammaShape.s:ITS1-region-aligned"/>
+            <log idref="YuleModel.t:ITS1-region-aligned"/>
+            <log idref="birthRate.t:ITS1-region-aligned"/>
+            <log idref="rateAC.s:ITS1-region-aligned"/>
+            <log idref="rateAG.s:ITS1-region-aligned"/>
+            <log idref="rateAT.s:ITS1-region-aligned"/>
+            <log idref="rateCG.s:ITS1-region-aligned"/>
+            <log idref="rateGT.s:ITS1-region-aligned"/>
+            <log idref="freqParameter.s:ITS1-region-aligned"/>
+        </logger>
+        <logger id="screenlog" spec="Logger" logEvery="1000">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+        </logger>
+        <logger id="treelog.t:ITS1-region-aligned" spec="Logger" fileName="$(filebase)-$(tree).trees" logEvery="1000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:ITS1-region-aligned" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:ITS1-region-aligned"/>
+        </logger>
+        <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+    </run>
+
+</beast>

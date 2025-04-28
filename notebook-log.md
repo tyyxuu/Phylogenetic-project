@@ -245,3 +245,91 @@ After completion, MrBayes produces the following:
 - MrBayes was run on macOS, M1 architecture
 - Execution time: approximately 10–30 minutes depending on sequence length and hardware
 - Future extensions: partitioned models, clock models, or larger datasets
+# Reproducible Note for Bayesian Phylogenetic Analysis (ITS1 Region)
+
+## Project Information
+- **Analysis Target:** ITS1-region aligned sequences
+- **Goal:** Construct a Bayesian phylogenetic tree
+- **Tools Used:**
+  - BEAST 2.7.7
+  - BEAUTi 2.7.7
+  - TreeAnnotator 2.7.7
+  - FigTree v1.4.5_pre
+
+---
+
+## 1. Sequence Data Preparation
+- Input file: `ITS1-region-aligned.nex`
+- Format: Aligned NEXUS file
+- Aligned 12 taxa across 701 sites.
+
+---
+
+## 2. XML Configuration Using BEAUTi
+- Imported `.nex` file into BEAUTi 2.
+- Partition Settings:
+  - **Data Type:** nucleotide
+  - **Site Model:** GTR + Gamma (4 gamma categories, shape estimated)
+  - **Clock Model:** Strict clock (rate estimated)
+  - **Tree Prior:** Coalescent Constant Population
+- Prior Distributions:
+  - Base frequencies: Dirichlet[4.0, 4.0, 4.0, 4.0]
+  - Gamma shape parameter: Exponential[1.0]
+  - Population size: 1/X prior
+  - Substitution rates: Gamma distributions with customized parameters
+- MCMC Setup:
+  - Chain length: 10,000,000
+  - Pre-burnin: 0
+- Output file: `ITS1-region-aligned.xml`
+
+---
+
+## 3. BEAST MCMC Analysis
+- Command: Run BEAST 2.7.7 with the generated XML.
+- Summary:
+  - MCMC chain length: 10 million generations
+  - Total runtime: ~278 seconds
+  - End likelihood: `-1559.1203600913755`
+
+---
+
+## 4. Maximum Clade Credibility Tree Extraction
+- Tool: TreeAnnotator 2.7.7
+- Settings:
+  - Burn-in: 10% (first 1000 trees discarded)
+  - Tree target: Maximum clade credibility (MCC) tree
+- Output file: `ITS1-region-aligned_annotated.tree`
+
+---
+
+## 5. Visualization and Plotting
+- Tool: FigTree v1.4.5_pre
+- Visualization Steps:
+  - Layout: Rectangular tree
+  - Tip Labels: Enabled (species names shown)
+  - Branch Labels: Posterior probabilities displayed
+  - Scale Bar: Enabled
+  - Appearance: Line width increased, font size adjusted
+- Export: Final tree exported as high-resolution PDF/PNG.
+
+---
+
+## 6. Notes on Posterior Probabilities
+- Posterior probabilities close to 1 indicate strong branch support.
+- Posterior values < 0.5 indicate weakly supported branches.
+- Some branches had very low posterior (~0.03) and were treated cautiously during interpretation.
+
+---
+
+## ✅ Project Status
+- Full analysis pipeline completed successfully.
+- Final outputs:
+  - MCC tree file
+  - Annotated tree figure (PDF/PNG)
+
+---
+
+## Quick Summary
+> This project reproducibly built a Bayesian phylogenetic tree based on ITS1-region sequences using BEAST2.7.7, and visualized the final tree with FigTree v1.4.5_pre.
+
+
